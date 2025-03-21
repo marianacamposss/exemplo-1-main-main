@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Fixação</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script>
+        function changeImage(newSrc) {
+            document.querySelector(".logo").src = newSrc;
+        }
+
+        function resetImage() {
+            document.querySelector(".logo").src = "../../ex fixacao/desafio 1/logo.png";
+        }
+    </script>
+</head>
+<body>
+    <div class="box">
+        <img src="../../ex fixacao/desafio 1/logo.png" alt="Logo" class="logo">
+        <h1>Exercícios de Fixação</h1>
+        <div class="buttons">
+            <a href="../../exemplo1.html" class="button" onmouseover="changeImage('../../ex fixacao/desafio 1/calculadora.png')" onmouseout="resetImage()">Calculadora</a>
+            <a href="../ex 1/index.html" class="button" onmouseover="changeImage('../../ex fixacao/desafio 1/horas.png')" onmouseout="resetImage()">Cálculo de horas extras</a>
+            <a href="../ex 2/index.html" class="button" onmouseover="changeImage('../../ex fixacao/desafio 1/salario.png')" onmouseout="resetImage()">Aumento de salário</a>
+            <a href="../ex 3/index.html" class="button" onmouseover="changeImage('../../ex fixacao/desafio 1/frete.png')" onmouseout="resetImage()">Calculadora de Transporte Fretado</a>
+        </div>
+    </div>
+</body>
+</html>
